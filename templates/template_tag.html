@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>模板标签详解</h1>
+<!--if语句-->
+{% if message %}
+    {{ message}}
+{% endif%}
+
+<hr/>
+<!--if else语句-->
+{% if date1 %}
+    {{ date}}
+    {% else %}
+    《no date1》
+{% endif%}
+<hr/>
+
+<!--for循环遍历数组-->
+{% for day in days%}
+    Today is {{ day}}
+{% endfor%}
+<hr/>
+
+<!--for循环遍历字典，带items-->
+{% for day,things in days_job.items%}
+    Today day is = {{ day}},things = {{things}}<br/>
+{% endfor%}
+<hr/>
+
+<!--for循环遍历字典，不带items-->
+{% for day in days_job%}
+    第{{ forloop.counter }}次===Today day is = {{ day}}<br/>
+{% endfor%}
+<hr/>
+默认过滤器：
+<!--过滤器-->
+日期过滤器：{{ now|date:"Y-m-d H:i:s" }}<br>
+转大写：{{ hello|upper }}<br>
+转小写：{{ hello|lower }}<br>
+转单词大写：{{ hello|capfirst }}<br>
+------ 使用过滤器的参数时，你不能有空格 -------
+{{ hello|cut:"o" }}
+</body>
+</html>

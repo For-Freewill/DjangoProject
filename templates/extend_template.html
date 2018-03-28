@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% comment %}
+1.继承的时候，extend必须是第一行；
+2.子模版里面，除了block里面的元素。其它内容都是会被抛弃的。
+{% endcomment %}
+{% include "header2.html" %}<!--不会生效，因为没有在block里面-->
+<br>
+{% block content %}
+    当前实际菜单：extend_template.html
+{# 这是一个行注释 #}
+<!-- 这是一个html注释 -->
+{% endblock %}
+<p>bottom</p> <!--不会生效，因为没有在block里面-->

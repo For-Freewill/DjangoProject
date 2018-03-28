@@ -1,0 +1,15 @@
+{% load custom_tags %}  <!--装载过滤器函数-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+自定义过滤器，替换H并且转小写-{{ message| mycut:"H" }} <!--自定义过滤器-->
+<hr>
+默认过滤器,小写转换：{{ message| lower}}<!--默认过滤器-->
+<hr>
+自定义标签，传递参数：注意自定义的标签必须是%%应用：{% curr_date "%Y-%m-%d"%}
+</body>
+</html>
