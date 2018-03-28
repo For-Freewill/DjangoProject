@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render,redirect
-from django.views import View
+from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse
+from django.views import View
 from django.http import HttpResponse
 from django.template.loader import get_template
-import time
+from .models import Article, Reply
 import datetime
+
 # Create your views here.
 #########第2课：2018-3-19 ##########
 class HelloWorld(View):
@@ -220,3 +221,65 @@ class ImportStatic(View):
     #导入静态文件
     def get(self,request):
         return render(request,"import_static.html",locals())
+
+#### 第7课  2018-3-27 ##########
+class ModelOper(View):
+    def get(self, request):
+        # 新增一个文章的数据
+        #INSERT hello_article(title, content, reply) VALUES ("怎么样在django中新增一条数据",
+        # "我们可以使用django的save方法持久化一条数据", "这边文章写得真好")
+        article = Article()
+        article.title = "怎么样在django中新增一条数据"
+        article.content = "我们可以使用django的save方法持久化一条数据"
+        article.reply = "这边文章写得真好"
+        article.save()
+
+        # 以下为新增数据简写的方式
+        # Article(title="怎么样在django中新增一条数据第二种方式",
+        #         content="我们可以使用django的save方法持久化一条数据").save()
+
+        # 查询所有表数据
+        # 等同于select * from hello_article;
+        # 这里返回的是一个QuerySet，实际就是一个数组
+        articles = Article.objects.all()
+        print articles
+
+        for article in articles:
+            # print article.__dict__
+            print "-------------"
+            print article.title
+            print article.content
+            print article.reply
+            print "-------------"
+
+
+        # 查询单个数据
+        # 等同于select * from hello_article where id=1;
+        # 在django 的ORM查询中，数据库的主键可以用PK代替
+        # 通过get方式返回的数据，它只会返回一个对象
+        # 如果通过条件返回的数据有多条或者找不到，都会报错
+        # article = Article.objects.get(pk=1)
+        # article = Article.objects.get(id=1)
+
+        # 批量删除
+        # 等同于 DELETE FROM hello_article WHERE status=1
+        # 批量删除，如果找不到数据，就不会删除
+        # Article.objects.filter(status=1).delete()
+
+        # 删除单个
+        # DELETE FROM hello_article WHERE id=1
+        # 如果数据不存在，则会报错
+        # Article.objects.get(id=1).delete()
+
+        # 批量修改
+        # UPDATE hello_article SET status=3 WHERE status=2
+        # Article.objects.filter(status=2).update(status=3)
+
+        # 单个修改
+        # 实际上save方法如果当前实例已经存在于数据库中，它就会当初一个update操作
+        # Article.objects.filter(id=7).update(status=4)
+        # article = Article.objects.get(pk=7)
+        # article.status = 1
+        # article.save()
+
+        return render(request, "model_oper.html", locals())

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Article.object.all()的查询结果: <br/>
+{% for article in articles %}
+    <p>
+        title：{{ article.title }}<br/>
+        content：{{ article.content }}<br/>
+        reply：{{ article.content }}<br/>
+    </p>
+{% endfor %}
+
+Article.object.get(pk=1)的查询结果: <br/>
+<p>
+    title：{{ article.title }}<br/>
+    content：{{ article.content }}<br/>
+    reply：{{ article.content }}<br/>
+</p>
+</body>
+</html>

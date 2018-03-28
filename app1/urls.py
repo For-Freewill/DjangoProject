@@ -68,6 +68,9 @@ urlpatterns = [
     url(r"custom_include3/$", views.CustomInclude3.as_view()),
     url(r"custom_include4/$", views.CustomInclude4.as_view()),
     url(r"import_static/$", views.ImportStatic.as_view()),
+
+    #######第7课 2018-3-27########
+    url(r"model_oper/$", views.ModelOper.as_view()),
 ]
 
 
