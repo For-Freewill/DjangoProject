@@ -21,6 +21,7 @@ from app1 import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^app1/', include("app1.urls", namespace="app1")),
+    url(r'^model/', include("model_study.urls", namespace="model_url")),
 ]
 
 
