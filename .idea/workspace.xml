@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18a9c9cf-5833-4244-bd0c-f3914732aadf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-    </list>
+    <list default="true" id="18a9c9cf-5833-4244-bd0c-f3914732aadf" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,16 +154,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545721633525</updated>
-      <workItem from="1545721634902" duration="847000" />
+      <workItem from="1545721634902" duration="1035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="847000" />
+    <option name="totallyTimeSpent" value="1035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="62" width="1400" height="757" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" x="570" y="217" width="339" height="446" id="Project" order="0" visible="true" weight="0.2496318" />
