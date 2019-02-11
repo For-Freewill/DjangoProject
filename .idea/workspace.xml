@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18a9c9cf-5833-4244-bd0c-f3914732aadf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/feature1" afterDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/feature3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +24,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="45">
               <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
@@ -52,10 +55,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/feature1">
+
+        <entry file="file://$PROJECT_DIR$/feature3">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+
             </state>
           </provider>
         </entry>
@@ -79,7 +84,9 @@
         <option value="$PROJECT_DIR$/flask_new.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/README.md" />
+
         <option value="$PROJECT_DIR$/feature1" />
+
       </list>
     </option>
   </component>
@@ -97,6 +104,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,7 +116,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,13 +191,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4028000" />
+
+    <option name="totallyTimeSpent" value="3900000" />
+
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="62" width="1400" height="757" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="570" y="217" width="339" height="446" id="Project" order="0" visible="true" weight="0.27540502" />
+
+      <window_info active="true" content_ui="combo" x="570" y="217" width="339" height="446" id="Project" order="0" visible="true" weight="0.2790869" />
+
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -229,7 +240,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="45">
           <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding>
             <element signature="e#22#31#0" expanded="true" />
@@ -254,10 +265,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature1">
+    <entry file="file://$PROJECT_DIR$/feature3">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+
         </state>
       </provider>
     </entry>
